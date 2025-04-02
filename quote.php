@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "your-email@gmail.com"; // Укажите ваш Gmail
+    $to = "cha237438@gmail.com"; // Укажите ваш Gmail
     $subject = "New Quote Request";
     $message = "
         Email: " . $_POST['email'] . "\n
