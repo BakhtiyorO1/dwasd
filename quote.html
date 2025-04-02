@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - ABL Logistics</title>
+    <link rel="stylesheet" href="quote.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="./Abl logistics.jpg" alt="Company Logo" height="50">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h2>Fill out to get a quote</h2>
+        <section id="get-quote">
+            <h2>Fill out the form below</h2>
+            <form id="quote-form" action="quote.php" method="post">
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="pickup">Zip Code for Pick-Up:</label>
+                <input type="text" id="pickup" name="pickup" required>
+                
+                <label for="delivery">Zip Code for Delivery:</label>
+                <input type="text" id="delivery" name="delivery" required>
+                
+                <label for="name">Name and Surname:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="year">Vehicle Year:</label>
+                <input type="text" id="year" name="year" required>
+                
+                <label for="model">Vehicle Model:</label>
+                <input type="text" id="model" name="model" required>
+                
+                <label for="make">Vehicle Make:</label>
+                <input type="text" id="make" name="make" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="quote.js"></script>
+</body>
+</html>
