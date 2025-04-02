@@ -1,49 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a Quote - ABL Logistics</title>
-    <link rel="stylesheet" href="quote.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Get a Quote - ABL Logistics</title>
+<link href="quote.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">
-                <img src="./Abl logistics.jpg" alt="Company Logo" height="50">
-            </a>
-        </nav>
-    </header>
-    <main>
-        <h2>Fill out to get a quote</h2>
-        <section id="get-quote">
-            <h2>Fill out the form below</h2>
-            <form id="quote-form" action="quote.php" method="post">
-                <label for="email">Gmail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="pickup">Zip Code for Pick-Up:</label>
-                <input type="text" id="pickup" name="pickup" required>
-                
-                <label for="delivery">Zip Code for Delivery:</label>
-                <input type="text" id="delivery" name="delivery" required>
-                
-                <label for="name">Name and Surname:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="year">Vehicle Year:</label>
-                <input type="text" id="year" name="year" required>
-                
-                <label for="model">Vehicle Model:</label>
-                <input type="text" id="model" name="model" required>
-                
-                <label for="make">Vehicle Make:</label>
-                <input type="text" id="make" name="make" required>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    <script src="quote.js"></script>
+<header>
+<nav>
+<a href="index.html">
+<img alt="Company Logo" height="50" src="./Abl logistics.jpg"/>
+</a>
+</nav>
+</header>
+<main>
+<h2>Fill out to get a quote</h2>
+<section id="get-quote">
+<h2>Fill out the form below</h2>
+<form action="https://formspree.io/f/manepewe" id="quote-form" method="POST">
+<label for="email">Gmail:</label><input name="location" placeholder="Your Location" required="True" type="text"/><textarea name="message" placeholder="Your Message" required="True"></textarea>
+<input id="email" name="email" required="" type="email"/>
+<label for="pickup">Zip Code for Pick-Up:</label>
+<input id="pickup" name="pickup" required="" type="text"/>
+<label for="delivery">Zip Code for Delivery:</label>
+<input id="delivery" name="delivery" required="" type="text"/>
+<label for="name">Name and Surname:</label>
+<input id="name" name="name" required="" type="text"/>
+<label for="year">Vehicle Year:</label>
+<input id="year" name="year" required="" type="text"/>
+<label for="model">Vehicle Model:</label>
+<input id="model" name="model" required="" type="text"/>
+<label for="make">Vehicle Make:</label>
+<input id="make" name="make" required="" type="text"/>
+<button type="submit">Submit</button>
+<input name="_redirect" type="hidden" value="thankyou.html"/></form>
+</section>
+</main>
+<script src="quote.js"></script>
 </body>
 </html>
